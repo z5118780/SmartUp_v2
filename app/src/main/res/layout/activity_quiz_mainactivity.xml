@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jennwong.smartup.Quiz_mainactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/questionsTxt"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:text="@string/what_is_this_question"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button1"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:background="@drawable/background_14"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="@string/option_1"
+                android:clickable="true"
+
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button2"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:background="@drawable/background_14"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="@string/option_2"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button3"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:background="@drawable/background_14"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="@string/option_3"
+                android:clickable="true"
+
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/button4"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:background="@drawable/background_14"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="@string/option_4"
+                android:clickable="true"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:text= "@string/_00_00"
+                android:textAlignment="center"
+                android:id="@+id/timerTxt"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
