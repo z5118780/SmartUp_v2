@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_14"
     tools:context="com.example.jennwong.smartup.Quiz_mainactivity">
 
     <LinearLayout
@@ -12,6 +13,7 @@
         >
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:id="@+id/questionsTxt"
@@ -36,10 +38,12 @@
             <Button
                 android:layout_width="0dp"
                 android:id="@+id/button1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight ="1"
                 android:background="@drawable/background_14"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:text="@string/option_1"
@@ -50,6 +54,8 @@
             <Button
                 android:layout_width="0dp"
                 android:id="@+id/button2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight ="1"
                 android:background="@drawable/background_14"
@@ -71,6 +77,8 @@
             <Button
                 android:layout_width="0dp"
                 android:id="@+id/button3"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_height="match_parent"
                 android:layout_weight ="1"
                 android:background="@drawable/background_14"
@@ -83,6 +91,8 @@
                 />
 
             <Button
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_width="0dp"
                 android:id="@+id/button4"
                 android:layout_height="match_parent"
@@ -100,11 +110,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="80dp"
             android:padding="5dp"
             android:orientation="horizontal"
             >
             <TextView
+                android:layout_marginTop="32dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="28sp"

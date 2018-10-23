@@ -16,31 +16,13 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.CountDownTimer;
-import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 
 import com.example.jennwong.smartup.Quiz.Question;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class Quiz_mainactivity extends AppCompatActivity {
 
 
-
-
-    public class MainActivity extends AppCompatActivity {
 
         Button b1, b2, b3, b4;
         TextView quesTxt, timTxt;
@@ -52,7 +34,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.activity_quiz_mainactivity);
 
             b1 = findViewById(R.id.button1);
             b2 = findViewById(R.id.button2);
@@ -63,7 +45,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
             timTxt = findViewById(R.id.timerTxt);
 
             updateQuestion();
-            reverseTimer(30,timTxt);
+            reverseTimer(30, timTxt);
 
 
         }
@@ -98,7 +80,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
                                         @Override
                                         public void run() {
                                             correct++;
-                                            b1.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                            b1.setBackgroundResource(R.drawable.background_14);
 
                                             updateQuestion();
                                         }
@@ -114,22 +96,20 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                         b2.setBackgroundColor(Color.GREEN);
 
-                                    }
-                                    else if (b3.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b3.getText().toString().equals(question.getAnswer())) {
 
                                         b3.setBackgroundColor(Color.GREEN);
-                                    }
-                                    else if (b4.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b4.getText().toString().equals(question.getAnswer())) {
 
                                         b4.setBackgroundColor(Color.GREEN);
                                     }
 
                                     Handler handler = new Handler();
                                     handler.postDelayed(() -> {
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.background_14);
+                                        b2.setBackgroundResource(R.drawable.background_14);
+                                        b3.setBackgroundResource(R.drawable.background_14);
+                                        b4.setBackgroundResource(R.drawable.background_14);
                                         updateQuestion();
 
                                     }, 1500);
@@ -151,7 +131,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
                                         @Override
                                         public void run() {
                                             correct++;
-                                            b2.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                            b2.setBackgroundResource(R.drawable.background_14);
 
                                             updateQuestion();
                                         }
@@ -167,22 +147,20 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                         b1.setBackgroundColor(Color.GREEN);
 
-                                    }
-                                    else if (b3.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b3.getText().toString().equals(question.getAnswer())) {
 
                                         b3.setBackgroundColor(Color.GREEN);
-                                    }
-                                    else if (b4.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b4.getText().toString().equals(question.getAnswer())) {
 
                                         b4.setBackgroundColor(Color.GREEN);
                                     }
 
                                     Handler handler = new Handler();
                                     handler.postDelayed(() -> {
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.background_14);
+                                        b2.setBackgroundResource(R.drawable.background_14);
+                                        b3.setBackgroundResource(R.drawable.background_14);
+                                        b4.setBackgroundResource(R.drawable.background_14);
                                         updateQuestion();
 
                                     }, 1500);
@@ -205,7 +183,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
                                         @Override
                                         public void run() {
                                             correct++;
-                                            b3.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                            b3.setBackgroundResource(R.drawable.background_14);
 
                                             updateQuestion();
                                         }
@@ -221,22 +199,20 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                         b1.setBackgroundColor(Color.GREEN);
 
-                                    }
-                                    else if (b2.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b2.getText().toString().equals(question.getAnswer())) {
 
                                         b2.setBackgroundColor(Color.GREEN);
-                                    }
-                                    else if (b4.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b4.getText().toString().equals(question.getAnswer())) {
 
                                         b4.setBackgroundColor(Color.GREEN);
                                     }
 
                                     Handler handler = new Handler();
                                     handler.postDelayed(() -> {
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.background_14);
+                                        b2.setBackgroundResource(R.drawable.background_14);
+                                        b3.setBackgroundResource(R.drawable.background_14);
+                                        b4.setBackgroundResource(R.drawable.background_14);
                                         updateQuestion();
 
                                     }, 1500);
@@ -258,7 +234,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
                                         @Override
                                         public void run() {
                                             correct++;
-                                            b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                            b4.setBackgroundResource(R.drawable.background_14);
 
                                             updateQuestion();
                                         }
@@ -274,22 +250,20 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                         b1.setBackgroundColor(Color.GREEN);
 
-                                    }
-                                    else if (b2.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b2.getText().toString().equals(question.getAnswer())) {
 
                                         b2.setBackgroundColor(Color.GREEN);
-                                    }
-                                    else if (b3.getText().toString().equals(question.getAnswer())) {
+                                    } else if (b3.getText().toString().equals(question.getAnswer())) {
 
                                         b3.setBackgroundColor(Color.GREEN);
                                     }
 
                                     Handler handler = new Handler();
                                     handler.postDelayed(() -> {
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.background_14);
+                                        b2.setBackgroundResource(R.drawable.background_14);
+                                        b3.setBackgroundResource(R.drawable.background_14);
+                                        b4.setBackgroundResource(R.drawable.background_14);
                                         updateQuestion();
 
                                     }, 1500);
@@ -299,7 +273,6 @@ public class Quiz_mainactivity extends AppCompatActivity {
                         });
 
                     }
-
 
 
                     @Override
@@ -314,22 +287,22 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
         }
 
-        public void reverseTimer (int seconds, final TextView tv){
+        private void reverseTimer(int seconds, final TextView tv) {
 
-            new CountDownTimer(seconds * 1000 + 1000, 1000){
-                public void onTick(long millisUntilFinished){
-                    int seconds = (int) millisUntilFinished/1000 ;
-                    int minutes = seconds/60;
-                    seconds= seconds % 60;
-                    tv.setText(String.format("%02d", minutes)
-                            + ":" + String.format( "%02d",seconds));
+            new CountDownTimer(seconds * 1000 + 1000, 1000) {
+                public void onTick(long millisUntilFinished) {
+                    int seconds = (int) millisUntilFinished / 1000;
+                    int minutes = seconds / 60;
+                    seconds = seconds % 60;
+                    tv.setText(String.format(getString(R.string.timer), minutes)
+                            + ":" + String.format("%02d", seconds));
                 }
 
 
                 @Override
                 public void onFinish() {
                     tv.setText("Completed");
-                    Intent myIntent = new Intent (MainActivity.this,ResultActivity.class);
+                    Intent myIntent = new Intent(Quiz_mainactivity.this, ResultActivity.class);
                     myIntent.putExtra("Total", String.valueOf(total));
                     myIntent.putExtra("Correct", String.valueOf(correct));
                     myIntent.putExtra("Incorrect", String.valueOf(wrong));
@@ -340,5 +313,5 @@ public class Quiz_mainactivity extends AppCompatActivity {
         }
 
 
-
     }
+
