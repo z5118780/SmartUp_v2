@@ -40,13 +40,14 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:gravity="center_horizontal"
-            android:text="WELCOME"
+            android:text="bye"
             android:fontFamily="casual"
             android:textColor="@android:color/black"
             android:textSize="34sp" />
 
 
     </RelativeLayout>
+
 
 
     <GridLayout
