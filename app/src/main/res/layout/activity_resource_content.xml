@@ -1,0 +1,109 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background_14"
+android:orientation="vertical"
+android:weightSum="10"
+tools:context="Resource_content">
+
+<RelativeLayout
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="4dp">
+
+    <ImageView
+        android:id="@+id/energybar"
+        android:background="@drawable/energybar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/resources"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal"
+            android:text="Resources"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="34sp" />
+
+
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="210dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="16dp"
+    android:layout_weight="4"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <ImageButton
+        android:id="@+id/networking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/networking3" />
+
+
+</RelativeLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="200dp"
+    android:textAlignment="center"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="32dp"
+    android:layout_weight="0">
+
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/study"
+
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

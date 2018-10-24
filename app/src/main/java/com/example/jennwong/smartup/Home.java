@@ -9,6 +9,8 @@ import android.widget.ImageButton;
 public class Home extends AppCompatActivity {
 
     ImageButton quizbtn;
+    ImageButton resourcebtn;
+
 
 
 
@@ -16,6 +18,17 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+            resourcebtn=(ImageButton) findViewById(R.id.resource_icon);
+
+            resourcebtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent resource = new Intent(Home.this, Resource_content.class);
+                    startActivity(resource);
+
+                }
+            });
 
             quizbtn = (ImageButton) findViewById(R.id.quiz_icon);
 
@@ -27,6 +40,8 @@ public class Home extends AppCompatActivity {
                 startActivity(quiz);
             }
         });
+
+
 
 
        //INITIATE VIEW'S

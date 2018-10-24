@@ -13,7 +13,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="16dp"
         android:layout_weight="3">
 
 
@@ -31,6 +31,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:layout_weight="1">
 
         <TextView
@@ -39,7 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:gravity="center_horizontal"
-            android:text="HOME"
+            android:text="WELCOME"
+            android:fontFamily="casual"
             android:textColor="@android:color/black"
             android:textSize="34sp" />
 
@@ -65,7 +67,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="35dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="32dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="16dp">
 
@@ -81,7 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/quiz_icon" />
+                    android:src="@drawable/quiz4" />
 
 
             </LinearLayout>
@@ -96,7 +98,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="35dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="32dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -114,7 +116,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/resources_icon" />
+                    android:src="@drawable/resources4" />
 
 
             </LinearLayout>
@@ -133,7 +135,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/question"
+            android:src="@drawable/pointer7"
 
             />
     </RelativeLayout>
