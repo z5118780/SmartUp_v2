@@ -22,7 +22,8 @@
             android:name=".ResultActivity"
             android:label="@string/title_activity_result"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Resource_content"></activity>
+        <activity android:name=".Resource_content" />
+        <activity android:name=".comingsoon"></activity>
     </application>
 
 </manifest>

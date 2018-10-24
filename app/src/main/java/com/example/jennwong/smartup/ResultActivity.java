@@ -7,11 +7,14 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
 
     TextView t1,t2,t3;
+
+    Button homebtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +36,8 @@ public class ResultActivity extends AppCompatActivity {
         t2.setText(correct);
         t3.setText(wrong);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        homebtn  = (Button) findViewById(R.id.home);
+        homebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent resource = new Intent(ResultActivity.this, Home.class);
