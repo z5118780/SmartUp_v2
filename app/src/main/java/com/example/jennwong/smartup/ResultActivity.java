@@ -33,6 +33,15 @@ public class ResultActivity extends AppCompatActivity {
         t2.setText(correct);
         t3.setText(wrong);
 
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent resource = new Intent(ResultActivity.this, Home.class);
+                startActivity(resource);
+            }
+        });
+
 
 
 

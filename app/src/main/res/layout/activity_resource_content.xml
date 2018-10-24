@@ -66,6 +66,7 @@ tools:context="Resource_content">
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:scaleType="fitCenter"
+        style="?android:attr/borderlessButtonStyle"
         android:src="@drawable/networking3" />
 
 
