@@ -14,7 +14,7 @@ public class ResultActivity extends AppCompatActivity {
 
     TextView t1,t2,t3;
 
-    Button homebtn;
+    Button homebtn, resourcebtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,14 @@ public class ResultActivity extends AppCompatActivity {
             }
         });
 
-
+        resourcebtn  = (Button) findViewById(R.id.resource2);
+        resourcebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent resource = new Intent(ResultActivity.this, Resource_content.class);
+                startActivity(resource);
+            }
+        });
 
 
 
