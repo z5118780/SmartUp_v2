@@ -1,291 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:fillViewport="true"
-        android:scrollbars="vertical"
-        android:scrollbarStyle="insideInset">
-
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background2"
+    android:layout_height="match_parent"
+    tools:context=".Notes">
 
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="0dp"
+                android:text="DHCP Process"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                tools:text="DHCP Process" />
+
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/background2"
-            android:orientation="vertical"
-            android:scrollbars="vertical"
-            android:weightSum="10"
-            tools:context=".Notes">
+            android:layout_height="618dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/djhp" />
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:text="Play"
+                android:clickable="true"
+                android:id="@+id/btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/whitebackground"/>
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:layout_weight="1">
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="32dp" >
 
 
-                <TextView
-                    android:id="@+id/heading"
-                    android:layout_width="336dp"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="DHCP Process"
-                    android:textAlignment="center"
-                    android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="30sp"
-                    tools:text="DHCP Process" />
-            </RelativeLayout>
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
+                    <TextView
+                        android:id="@+id/textV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/button_color"
+                        android:text="DHCP Discover"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textV2"
+                        android:layout_width="match_parent"
+                        android:layout_height="97dp"
+                        android:layout_below="@+id/textV"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="1dp"
+                        android:text="DHCP client sends a DHCP Discover broadcast on the network for finding a DHCP server. If there is no respond from a DHCP server, the client assigns itself an Automatic Private IPv4 address (APIPA)."
+                        android:textSize="10sp" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:layout_weight="3"
-                android:id="@+id/lay">
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="32dp">
 
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="133dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="23dp"
-                    android:src="@drawable/whitebackground"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="0dp" />
 
-                <Button
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/button_color"
+                        android:text="DHCP Offer"
+                        android:textStyle="bold" />
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="0dp"
-                    android:text="Play"
-                    android:clickable="true"
-                    android:id="@+id/btn">
-
-                </Button>
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="97dp"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="DHCP servers on a network that receive a DHCP Discover message respond with a DHCP Offer message, which offers the client an IPv4 address lease."
+                        android:textSize="10sp" />
 
 
-            </RelativeLayout>
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="4dp"
-                android:layout_weight="4"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="false"
-                android:padding="8dp"
-                android:rowCount="1"
-                android:scrollbarAlwaysDrawVerticalTrack="true">
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="35dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="50dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="32dp" >
 
 
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scrollbarAlwaysDrawVerticalTrack="true">
-
-                        <TextView
-                            android:id="@+id/textV"
-                            android:layout_width="wrap_content"
-                            android:layout_height="22dp"
-                            android:layout_alignParentTop="true"
-                            android:background="@drawable/button_color"
-                            android:text="DHCP Discover"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textV2"
-                            android:layout_width="match_parent"
-                            android:layout_height="97dp"
-                            android:layout_below="@+id/textV"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginBottom="1dp"
-                            android:text="DHCP client sends a DHCP Discover broadcast on the network for finding a DHCP server. If there is no respond from a DHCP server, the client assigns itself an Automatic Private IPv4 address (APIPA)."
-                            android:textSize="10sp" />
-
-                    </RelativeLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="35dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="50dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="32dp">
-
-
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scrollbarAlwaysDrawVerticalTrack="true">
-
-                        <TextView
-                            android:id="@+id/textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="22dp"
-                            android:layout_alignParentTop="true"
-                            android:background="@drawable/button_color"
-                            android:text="DHCP Offer"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="match_parent"
-                            android:layout_height="97dp"
-                            android:layout_below="@+id/textView"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentLeft="true"
-                            android:text="DHCP servers on a network that receive a DHCP Discover message respond with a DHCP Offer message, which offers the client an IPv4 address lease."
-                            android:textSize="10sp" />
-
-
-                    </RelativeLayout>
-
-                </android.support.v7.widget.CardView>
-
-            </GridLayout>
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="4dp"
-                android:layout_weight="4"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="false"
-                android:padding="8dp"
-                android:rowCount="1" >
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="35dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="50dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="32dp">
-
-
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scrollbarAlwaysDrawVerticalTrack="true">
-
-                        <TextView
-                            android:id="@+id/textV3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="22dp"
-                            android:layout_alignParentTop="true"
-                            android:background="@drawable/button_color"
-                            android:text="Request"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textV4"
-                            android:layout_width="match_parent"
-                            android:layout_height="97dp"
-                            android:layout_below="@+id/textV3"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentLeft="true"
-                            android:text="The DHCP message is sent in response to DHCPOFFER indicating that the client has accepted the network configuration sent in DHCPOFFER message from the server."
-                            android:textSize="10sp" />
-
-                    </RelativeLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="35dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="50dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="32dp">
-
-
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scrollbarAlwaysDrawVerticalTrack="true">
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="22dp"
-                            android:layout_alignParentTop="true"
-                            android:background="@drawable/button_color"
-                            android:text="Acknowledgement"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="match_parent"
-                            android:layout_height="97dp"
-                            android:layout_below="@+id/textView5"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentLeft="true"
-                            android:text="The DHCP server that the client responds to acknowledges the client, assigns it any configured DHCP options, and updates its DHCP database. The client then initializes and binds its TCP/IP protocol stack and can begin network communication"
-                            android:textSize="10sp" />
-                    </RelativeLayout>
-
-                </android.support.v7.widget.CardView>
-
-            </GridLayout>
-
-        </LinearLayout>
+            </android.support.v7.widget.CardView>
 
 
 
 
 
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="32dp">
 
-    </ScrollView>
+                    <TextView
+                        android:id="@+id/textV3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/button_color"
+                        android:text="Request"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textV4"
+                        android:layout_width="match_parent"
+                        android:layout_height="97dp"
+                        android:layout_below="@+id/textV3"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="The DHCP message is sent in response to DHCPOFFER indicating that the client has accepted the network configuration sent in DHCPOFFER message from the server."
+                        android:textSize="10sp" />
 
 
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="32dp">
+
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/button_color"
+                        android:text="Acknowledgement"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="97dp"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="The DHCP server that the client responds to acknowledges the client, assigns it any configured DHCP options, and updates its DHCP database. The client then initializes and binds its TCP/IP protocol stack and can begin network communication"
+                        android:textSize="10sp" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+</ScrollView>
 

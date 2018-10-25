@@ -74,13 +74,14 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                 b1.setBackgroundColor(Color.GREEN);
 
+
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
 
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b1.setBackgroundResource(R.drawable.button_color);
+                                        b1.setBackgroundResource(R.drawable.roundbutton);
 
                                         updateQuestion();
                                     }
@@ -106,10 +107,10 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                 Handler handler = new Handler();
                                 handler.postDelayed(() -> {
-                                    b1.setBackgroundResource(R.drawable.button_color);
-                                    b2.setBackgroundResource(R.drawable.button_color);
-                                    b3.setBackgroundResource(R.drawable.button_color);
-                                    b4.setBackgroundResource(R.drawable.button_color);
+                                    b1.setBackgroundResource(R.drawable.roundbutton);
+                                    b2.setBackgroundResource(R.drawable.roundbutton);
+                                    b3.setBackgroundResource(R.drawable.roundbutton);
+                                    b4.setBackgroundResource(R.drawable.roundbutton);
                                     updateQuestion();
 
                                 }, 1500);
@@ -131,7 +132,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b2.setBackgroundResource(R.drawable.button_color);
+                                        b2.setBackgroundResource(R.drawable.roundbutton);
 
                                         updateQuestion();
                                     }
@@ -157,10 +158,10 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                 Handler handler = new Handler();
                                 handler.postDelayed(() -> {
-                                    b1.setBackgroundResource(R.drawable.button_color);
-                                    b2.setBackgroundResource(R.drawable.button_color);
-                                    b3.setBackgroundResource(R.drawable.button_color);
-                                    b4.setBackgroundResource(R.drawable.button_color);
+                                    b1.setBackgroundResource(R.drawable.roundbutton);
+                                    b2.setBackgroundResource(R.drawable.roundbutton);
+                                    b3.setBackgroundResource(R.drawable.roundbutton);
+                                    b4.setBackgroundResource(R.drawable.roundbutton);
                                     updateQuestion();
 
                                 }, 1500);
@@ -183,7 +184,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b3.setBackgroundResource(R.drawable.button_color);
+                                        b3.setBackgroundResource(R.drawable.roundbutton);
 
                                         updateQuestion();
                                     }
@@ -209,10 +210,10 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                 Handler handler = new Handler();
                                 handler.postDelayed(() -> {
-                                    b1.setBackgroundResource(R.drawable.button_color);
-                                    b2.setBackgroundResource(R.drawable.button_color);
-                                    b3.setBackgroundResource(R.drawable.button_color);
-                                    b4.setBackgroundResource(R.drawable.button_color);
+                                    b1.setBackgroundResource(R.drawable.roundbutton);
+                                    b2.setBackgroundResource(R.drawable.roundbutton);
+                                    b3.setBackgroundResource(R.drawable.roundbutton);
+                                    b4.setBackgroundResource(R.drawable.roundbutton);
                                     updateQuestion();
 
                                 }, 1500);
@@ -234,7 +235,7 @@ public class Quiz_mainactivity extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b4.setBackgroundResource(R.drawable.button_color);
+                                        b4.setBackgroundResource(R.drawable.roundbutton);
 
                                         updateQuestion();
                                     }
@@ -260,10 +261,10 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
                                 Handler handler = new Handler();
                                 handler.postDelayed(() -> {
-                                    b1.setBackgroundResource(R.drawable.button_color);
-                                    b2.setBackgroundResource(R.drawable.button_color);
-                                    b3.setBackgroundResource(R.drawable.button_color);
-                                    b4.setBackgroundResource(R.drawable.button_color);
+                                    b1.setBackgroundResource(R.drawable.roundbutton);
+                                    b2.setBackgroundResource(R.drawable.roundbutton);
+                                    b3.setBackgroundResource(R.drawable.roundbutton);
+                                    b4.setBackgroundResource(R.drawable.roundbutton);
                                     updateQuestion();
 
                                 }, 1500);

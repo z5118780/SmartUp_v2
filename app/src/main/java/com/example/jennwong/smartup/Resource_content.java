@@ -28,7 +28,7 @@ public class Resource_content extends AppCompatActivity {
         networkbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cominsoon1 = new Intent(Resource_content.this, YoutubeMainActivity.class);
+                Intent cominsoon1 = new Intent(Resource_content.this, Notes.class);
                 startActivity(cominsoon1);
 
             }
