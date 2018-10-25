@@ -29,15 +29,31 @@
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="148dp"
         android:layout_marginLeft="148dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="459dp"
         android:layout_marginRight="140dp"
+        android:background="@drawable/roundbutton"
         android:clickable="true"
         android:text="Play" />
+
+    <Button
+        android:id="@+id/backtoresource"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginRight="140dp"
+        android:background="@drawable/roundbutton"
+        android:clickable="true"
+        android:text="Resources" />
 
 </RelativeLayout>

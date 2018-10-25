@@ -40,6 +40,7 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
 
 
         private static final String TAG = "MainActivity";
+            Button btnresources;
 
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -81,6 +82,19 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
                 }
             });
 
+            btnresources = (Button) findViewById(R.id.backtoresource);
+
+            btnresources.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v)
+                {
+                    Intent resourcespages = new  Intent(YoutubeMainActivity.this, Resource_content.class);
+                    startActivity(resourcespages);
+
+                }
+            });
+            }
+
 
 
 
@@ -91,4 +105,4 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
         }
 
 
-    }
+
