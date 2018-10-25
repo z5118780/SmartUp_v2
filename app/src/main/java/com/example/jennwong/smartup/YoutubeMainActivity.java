@@ -39,7 +39,7 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
 
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.activity_youtube_main);
             Log.d(TAG, "onCreate: Startin,");
             Button BtnP =  findViewById(R.id.button);
             final YouTubePlayerView mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlayerViewId);

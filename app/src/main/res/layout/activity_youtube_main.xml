@@ -7,12 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".YoutubeMainActivity">
 
-    <com.google.android.youtube.player.YouTubePlayerView
+    <ImageView
+        android:id="@+id/smartlogo"
+        android:src="@drawable/cloud"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
         android:id="@+id/youtubePlayerViewId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"/>
+
 
     <Button
         android:id="@+id/button"
@@ -21,9 +33,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="166dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="100dp"
         android:clickable="true"
         android:text="Play" />
 

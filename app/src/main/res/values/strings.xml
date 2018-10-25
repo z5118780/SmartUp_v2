@@ -11,4 +11,5 @@
     <string name="option_1">option_1</string>
     <string name="what_is_this_question">what_is_this_question</string>
     <string name="timer">%02d</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
