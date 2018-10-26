@@ -40,7 +40,7 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
 
 
         private static final String TAG = "MainActivity";
-            Button btnresources;
+            Button btnresources, btnhome;
 
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -88,7 +88,7 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
 
             //Initiate View
             btnresources = (Button) findViewById(R.id.backtoresource);
-            
+
             //Prepare on click view
 
             btnresources.setOnClickListener(new View.OnClickListener(){
@@ -100,6 +100,22 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
 
                 }
             });
+
+            //Initiate View
+            btnhome = (Button) findViewById(R.id.homebutton);
+
+            //Prepare on click view
+
+            btnhome.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v)
+                {
+                    Intent resourcespages = new  Intent(YoutubeMainActivity.this, Home.class);
+                    startActivity(resourcespages);
+
+                }
+            });
+
             }
 
 
