@@ -21,6 +21,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        // the content below has been referenced from https://www.youtube.com/watch?v=3gSIJTHiAvI&fbclid=IwAR3HmikDnFo-rklVVeCsMC9MZrS3Vd8Yp0mLVx1eC0p2tGI2XOO26r3FuBU
         //Initiate View
 
         t1= (TextView) findViewById(R.id.textView4);
@@ -40,6 +41,7 @@ public class ResultActivity extends AppCompatActivity {
         t2.setText(correct);
         t3.setText(wrong);
 
+    //buttons were implemented by the team 
 
         homebtn.setOnClickListener(new View.OnClickListener() {
             @Override
