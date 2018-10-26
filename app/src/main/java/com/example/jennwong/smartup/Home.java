@@ -19,9 +19,16 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //INITIATE VIEW'S
+
             resourcebtn=(ImageButton) findViewById(R.id.resource_icon);
+            quizbtn = (ImageButton) findViewById(R.id.quiz_icon);
+
+
+       //perform click event on button's
 
             resourcebtn.setOnClickListener(new View.OnClickListener() {
+
                 @Override
                 public void onClick(View v) {
                     Intent resource = new Intent(Home.this, Resource_content.class);
@@ -30,47 +37,21 @@ public class Home extends AppCompatActivity {
                 }
             });
 
-            quizbtn = (ImageButton) findViewById(R.id.quiz_icon);
 
 
-        quizbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+            quizbtn.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
                 Intent quiz = new  Intent(Home.this, Quiz_mainactivity.class);
                 startActivity(quiz);
-            }
-        });
+
+                }
+            });
 
 
 
-
-       //INITIATE VIEW'S
-
-      /* ImageButton quizbtn = (ImageButton) findViewById(R.id.quiz_icon);*/
-      /* ImageButton resourcebtn = (ImageButton) findViewById(R.id.resource_icon);*/
-
-
-       //perform click event on button's
-
-      /* quizbtn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent quiz = new Intent(Home.this, Quiz_mainactivity.class);
-               startActivity(quiz);
-               finish();
-           }
-       });*/
-
-
-
-       /*resourcebtn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent resource = onNewIntent(MainActivity.this, resourceactivity.class);
-               startActivity(resource);
-           }
-       });
-*/
 
 
 

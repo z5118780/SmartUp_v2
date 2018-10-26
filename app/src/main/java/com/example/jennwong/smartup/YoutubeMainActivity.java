@@ -68,9 +68,12 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
 
             };
 
-
+        //Initiate view
 
             BtnP.setOnClickListener(new View.OnClickListener(){
+
+
+                //Prepare on click view
 
                 @Override
                 public void onClick(View v)
@@ -82,7 +85,11 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
                 }
             });
 
+
+            //Initiate View
             btnresources = (Button) findViewById(R.id.backtoresource);
+            
+            //Prepare on click view
 
             btnresources.setOnClickListener(new View.OnClickListener(){
                 @Override

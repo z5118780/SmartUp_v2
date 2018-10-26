@@ -23,7 +23,17 @@ public class Resource_content extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resource_content);
 
+        //initiate view
+
        networkbtn =(ImageButton) findViewById(R.id.networking1);
+        polybtn = (ImageButton) findViewById(R.id.polymorphism);
+        loopbtn = (ImageButton) findViewById(R.id.loop);
+        securitybtn = (ImageButton) findViewById(R.id.security);
+        databasebtn = (ImageButton) findViewById(R.id.database);
+        serverbtn = (ImageButton) findViewById(R.id.server);
+
+
+        //Perform click view event
 
         networkbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +45,6 @@ public class Resource_content extends AppCompatActivity {
         });
 
 
-        polybtn = (ImageButton) findViewById(R.id.polymorphism);
 
         polybtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +55,7 @@ public class Resource_content extends AppCompatActivity {
             }
         });
 
-        loopbtn = (ImageButton) findViewById(R.id.loop);
+
 
         loopbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +66,7 @@ public class Resource_content extends AppCompatActivity {
             }
         });
 
-        securitybtn = (ImageButton) findViewById(R.id.security);
+
         securitybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,7 +76,7 @@ public class Resource_content extends AppCompatActivity {
             }
         });
 
-        databasebtn = (ImageButton) findViewById(R.id.database);
+
         databasebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,7 +85,7 @@ public class Resource_content extends AppCompatActivity {
             }
         });
 
-        serverbtn = (ImageButton) findViewById(R.id.server);
+
         serverbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

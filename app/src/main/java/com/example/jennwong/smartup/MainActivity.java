@@ -20,8 +20,12 @@ import com.google.firebase.database.ValueEventListener;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class MainActivity extends AppCompatActivity {
-    MaterialEditText edtNewUserName, edtNewPassword, edtNewEmail; // for sign up
-    MaterialEditText edtUser, edtPassword; // for sign in;
+
+    //for sign up
+    MaterialEditText edtNewUserName, edtNewPassword, edtNewEmail;
+
+    //for sign in
+    MaterialEditText edtUser, edtPassword;
 
     Button btnSignUp, btnSignIn;
 
@@ -33,15 +37,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Firebase
+        // Firebase database
         database = FirebaseDatabase.getInstance();
         users = database.getReference("Users");
 
         edtUser = (MaterialEditText) findViewById(R.id.edtUser);
         edtPassword = (MaterialEditText) findViewById(R.id.edtPassword);
 
+        //Initiate view
+
         btnSignIn = (Button) findViewById(R.id.btn_sign_in);
         btnSignUp = (Button) findViewById(R.id.btn_sign_up);
+
+        //Perform click on event
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,14 +117,19 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     private void showSignUpDialog() {
+
+        // Setting up alerts so users know what to do when they reach the sign up pop up
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
         alertDialog.setTitle("Sign Up");
         alertDialog.setMessage("Please fill in the full information");
 
+        //Layout inflater is used to make the sign up pop up
+
         LayoutInflater inflater = this.getLayoutInflater();
         View signup_layout = inflater.inflate(R.layout.signup_layout, null);
+
+        //setting up the variables
 
         edtNewUserName = signup_layout.findViewById(R.id.edtNewUserName);
         edtNewEmail = signup_layout.findViewById(R.id.edtNewEmail);
@@ -124,6 +137,8 @@ public class MainActivity extends AppCompatActivity {
 
         alertDialog.setView(signup_layout);
         alertDialog.setIcon(R.drawable.ic_account_circle_black_24dp);
+
+        //Perform Click on event for No and Yes
 
         alertDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
             @Override

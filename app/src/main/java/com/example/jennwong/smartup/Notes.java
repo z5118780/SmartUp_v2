@@ -17,8 +17,11 @@ public class Notes extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_notes);
 
+            //Initiate the View
 
             Button play = (Button) findViewById(R.id.btn);
+
+            // Perform click view
             play.setOnClickListener(new View.OnClickListener() {
 
                 @Override

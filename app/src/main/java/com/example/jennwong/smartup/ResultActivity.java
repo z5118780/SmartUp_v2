@@ -21,9 +21,13 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        //Initiate View
+
         t1= (TextView) findViewById(R.id.textView4);
         t2= (TextView) findViewById(R.id.textView5);
         t3= (TextView) findViewById(R.id.textView6);
+        homebtn  = (Button) findViewById(R.id.home);
+        resourcebtn  = (Button) findViewById(R.id.resource2);
 
 
         Intent i=getIntent();
@@ -36,7 +40,7 @@ public class ResultActivity extends AppCompatActivity {
         t2.setText(correct);
         t3.setText(wrong);
 
-        homebtn  = (Button) findViewById(R.id.home);
+
         homebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +49,7 @@ public class ResultActivity extends AppCompatActivity {
             }
         });
 
-        resourcebtn  = (Button) findViewById(R.id.resource2);
+
         resourcebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

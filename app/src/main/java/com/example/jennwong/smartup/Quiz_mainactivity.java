@@ -22,7 +22,7 @@ import com.example.jennwong.smartup.Quiz.Question;
 
 public class Quiz_mainactivity extends AppCompatActivity {
 
-
+  //for options, text for the questions, timer, database
 
     Button b1, b2, b3, b4;
     TextView quesTxt, timTxt;
@@ -35,6 +35,8 @@ public class Quiz_mainactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_mainactivity);
+
+        //Initiate view for the buttons
 
         b1 = findViewById(R.id.button1);
         b2 = findViewById(R.id.button2);
@@ -50,6 +52,9 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
     }
 
+    //method to update the question once the user has clicked the option
+
+
     private void updateQuestion() {
         total++;
         if (total > 5) {
@@ -61,11 +66,15 @@ public class Quiz_mainactivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     final Question question = dataSnapshot.getValue(Question.class);
 
+
+                    //Initate view
                     quesTxt.setText(question.getQuestion());
                     b1.setText(question.getOption1());
                     b2.setText(question.getOption2());
                     b3.setText(question.getOption3());
                     b4.setText(question.getOption4());
+
+                    //Perform click event on button
 
                     b1.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -288,10 +297,16 @@ public class Quiz_mainactivity extends AppCompatActivity {
 
     }
 
+    //method for reverse timer
+
     private void reverseTimer(int seconds, final TextView tv) {
 
         new CountDownTimer(seconds * 1000 + 1000, 1000) {
+
+
             public void onTick(long millisUntilFinished) {
+
+                //initiate view and setting the int seconds variable by having it divide it by millis, likewise with minutes
                 int seconds = (int) millisUntilFinished / 1000;
                 int minutes = seconds / 60;
                 seconds = seconds % 60;
@@ -300,11 +315,15 @@ public class Quiz_mainactivity extends AppCompatActivity {
             }
 
 
+
+            // Once the timer is finished, it goes to the results activit.
             @Override
             public void onFinish() {
                 tv.setText("Completed");
                 Intent myIntent = new Intent(Quiz_mainactivity.this, ResultActivity.class);
-                myIntent.putExtra("Total", String.valueOf(total));
+
+                // in the intent "put extra" the string is gathering the number of times the individual clicked the correct/incorrect and total number of questions.
+                myIntent.putExtra("Total", String.valueOf("5"));
                 myIntent.putExtra("Correct", String.valueOf(correct));
                 myIntent.putExtra("Incorrect", String.valueOf(wrong));
                 startActivity(myIntent);
