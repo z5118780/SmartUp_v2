@@ -45,6 +45,8 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_youtube_main);
+
+            // not directly written by my group - https://www.youtube.com/watch?v=-4bZ_rfvBTk
             Log.d(TAG, "onCreate: Startin,");
             Button BtnP =  findViewById(R.id.button);
             final YouTubePlayerView mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlayerViewId);
@@ -68,7 +70,7 @@ public class YoutubeMainActivity extends YouTubeBaseActivity {
 
             };
 
-        //Initiate view
+        //Initiate view - for BtnP on click method (https://www.youtube.com/watch?v=-4bZ_rfvBTk)
 
             BtnP.setOnClickListener(new View.OnClickListener(){
 

@@ -21,6 +21,8 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    //the code has been referenced from https://www.youtube.com/watch?v=3gSIJTHiAvI&fbclid=IwAR3HmikDnFo-rklVVeCsMC9MZrS3Vd8Yp0mLVx1eC0p2tGI2XOO26r3FuBU
+
     //for sign up
     MaterialEditText edtNewUserName, edtNewPassword, edtNewEmail;
 
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference users;
 
+
+    //all the code from this activity has been referenced from //the code has been referenced from https://www.youtube.com/watch?v=3gSIJTHiAvI&fbclid=IwAR3HmikDnFo-rklVVeCsMC9MZrS3Vd8Yp0mLVx1eC0p2tGI2XOO26r3FuBU
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

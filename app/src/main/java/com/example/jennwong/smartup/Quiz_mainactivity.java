@@ -22,6 +22,8 @@ import com.example.jennwong.smartup.Quiz.Question;
 
 public class Quiz_mainactivity extends AppCompatActivity {
 
+
+    // all the code written in this activity has been reference from www.youtube.com/watch?v=-4bZ_rfvBTk except for the designs part 
   //for options, text for the questions, timer, database
 
     Button b1, b2, b3, b4;
